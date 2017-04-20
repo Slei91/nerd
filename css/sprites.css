@@ -1,0 +1,64 @@
+.basket, .checkbox-off, .checkbox-on, .fb, .insta, .vk, .radio-off, .radio-on, .sort-down, .sort-up{
+	background: url(sprites.png) no-repeat;
+}
+
+.basket{
+	background-position: 0 -4px ;
+	width: 15px;
+	height: 15px;
+}
+
+.checkbox-off{
+	background-position: -46px 0;
+	width: 23px;
+	height: 23px;
+}
+
+.checkbox-on{
+	background-position: -93px 0;
+	width: 27px;
+	height: 23px;
+}
+
+.fb{
+	background-position: -150px 0;
+	width: 12px;
+	height: 22px;
+}
+
+.insta{
+	background-position: -199px -2px ;
+	width: 21px;
+	height: 21px;
+}
+
+.vk{
+	background-position: -244px -4px ;
+	width: 26px;
+	height: 15px;
+}
+
+.radio-off{
+	background-position: -295px -1px ;
+	width: 25px;
+	height: 25px;
+}
+
+.radio-on{
+	background-position: -343px 0;
+	width: 25px;
+	height: 25px;
+}
+
+.sort-down{
+	background-position: -399px -6px ;
+	width: 9px;
+	height: 9px;
+}
+
+.sort-up{
+	background-position: -450px -8px ;
+	width: 9px;
+	height: 9px;
+}
+
