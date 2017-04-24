@@ -3,27 +3,164 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
+
+	.slider {
+		width: 100%;
+		height: auto;
+
+		padding-bottom: 20px;
+	}
+
+	.slider {
+		background-position: right !important;
+		-webkit-background-size: 50% !important;
+		background-size: 50% !important;
+	}
+
+	.toggle {
+		bottom: 10px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+	.slider_content {
+		width: 50%;
+
+		font-size: 1em;
+	}
+	.slider_content .title {
+		font-size: 1.6em;
+		line-height: 1.2em;
+	}
+
+	.cards {
+		padding-bottom: 60px;
+		padding-top: 60px;
+	}
+
+	.features {
+		text-align: center;
+	}
+
+	.row .col-md-3:nth-child(2n) .partners:after {
+	display: none;
+	}
+
+	.contacts {
+		margin: 54px auto 0;
+	}
+	
+	.social_description,
+	.social {
+		text-align: center;
+	}
+
+	.social_description h3 {
+		font-size: 1.7em;
+	}
+
+	.social {
+		padding-top: 20px;
+	}
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	header {
+		padding-top: 20px;
+	}
+
+	.logo {
+		margin: 0 auto 20px;
+
+	}
+
+	.basket {
+		margin-top: 0;
+	}
+	
+	.main_nav ul {
+		display: none;
+		margin-left: 35px;
+		width: 100px;
+	}
+	
+	.main_nav ul li {
+		display: block;
+		text-align: left;
+	}
+
+	.main_nav ul li a{
+		margin: 0;
+		padding: 5px;
+		padding-top: 0;
+	}
+	
+	.main_nav button {
+		float: left;
+
+		font-size: 20px;
+	}
+	
+
+	.slider {
+		background-image:none !important;
+		background-color: pink ;
+
+		padding-bottom: 40px;
+		margin-bottom: 20px;
+
+	}
+	
+	.slider_content {
+		width: 100%;
+
+		text-align: center;
+	}
+	.slider_content .btn {
+		width: 180px ;
+	}
+	.toggle {
+		bottom: 2%;
+	}
+
+	.cards {
+		margin: 0 auto;
+
+		text-align: center;
+	}
+
+	.about_company .title {
+		font-size: 2em;
+	}
+
+	.partners img {
+		width: 75%;
+	}
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.features .nerds {
+		width: 100%;
+	}
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.contacts,
+	.contacts .btn {
+		width: 100%;
+	}
 
-}
+	.card_img {
+		display: none;
+	}
 
 
 /*==========  Mobile First Method  ==========*/
@@ -40,7 +177,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.main_nav ul {
+		display: block !important;
+	}
 }
 
 /* Medium Devices, Desktops */
