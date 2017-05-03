@@ -1,17 +1,17 @@
 *::-webkit-input-placeholder {
-	color: #666;
+	color: #d7dcde;
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
+	color: #d7dcde;
 	opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
+	color: #d7dcde;
 	opacity: 1;
 }
 *:-ms-input-placeholder {
-	color: #666;
+	color: #d7dcde;
 	opacity: 1;
 }
 
@@ -24,6 +24,8 @@ body textarea:required:valid {
 	
 }
 body {
+	min-width:320px;
+
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -222,11 +224,13 @@ header {
 	background-color: #fb565a;
 }
 
-.slider_content .btn:hover {
+.slider_content .btn:hover,
+.form_btn:hover {
 	background-color: #e74246;
 }
 
-.slider_content .btn:active {
+.slider_content .btn:active,
+.form_btn:active {
 	background-color: #d7373b;
 	color: #e37376;
 	box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1) inset; 
@@ -260,8 +264,6 @@ header {
 }
 
 .card_img {
-	width: 300px;
-	height: 146px;
 	margin-bottom: 25px;
 }
 
@@ -546,4 +548,156 @@ footer {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 9px;
+}
+
+
+					/* Попап Обратной связи */
+
+.rel {
+	position: relative;
+}
+
+.write_us {
+	position: absolute;
+	left: 50%;
+	top: -130px;
+	margin-left: -480px;
+	display: block;
+
+	width: 960px;
+	min-height: 430px;
+	background-color: white;
+	padding: 70px 100px;
+
+	z-index: 10;
+	box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75); 
+}
+
+.write_us_title {
+	width: 100%;
+	line-height: 45px;
+	font-size: 45px;
+	margin-bottom: 50px;
+}
+
+.write_us label {
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.form_sec_left,
+.form_sec_right {
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 35px;
+}
+
+.form_sec_left input[type="text"],
+.form_sec_right input[type="text"] {
+	width: 360px;
+	height: 46px;
+
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+
+	outline: none;
+}
+
+.form_sec_right {
+	margin-right: 0;
+}
+
+.form_sec_area textarea{
+	width: 760px;
+	height: 115px;
+	margin-bottom: 45px;
+
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+
+	outline: none;
+}
+
+.form_sec_left input[type="text"]:hover,
+.form_sec_right input[type="text"]:hover,
+.form_sec_area textarea:hover {
+	border-color: #b4b9bb;
+}
+
+.form_sec_left input[type="text"]:hover::placeholder,
+.form_sec_right input[type="text"]:hover::placeholder,
+.form_sec_area textarea:hover::placeholder {
+	color: #b1b1b1;
+}
+
+.form_sec_left input[type="text"]:focus,
+.form_sec_right input[type="text"]:focus,
+.form_sec_area textarea:focus{
+	border-color: #000000;
+}
+
+.form_sec_left input[type="text"]:focus::placeholder,
+.form_sec_right input[type="text"]:focus::placeholder,
+.form_sec_area textarea:focus::placeholder {
+	color: #444444;
+}
+
+.form_sec_left input[type="text"]:invalid,
+.form_sec_right input[type="text"]:invalid {
+	border-color: #e74246;
+}
+
+.form_btn {
+	display: inline-block;
+	padding: 18px 80px;
+
+	color: white;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	background-color: #fb565a;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+}
+
+.close {
+	position: absolute;
+	right: 80px;
+	top: 80px; 
+	width: 21px;
+	height: 21px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.close:hover:after,
+.close:hover:before{
+	background-color: #fb565a;
+}
+
+.close:active:after,
+.close:active:before{
+	background-color: #ffeeee;
+}
+
+.close:after,
+.close:before {
+	position: absolute;
+	top: -2px;
+	left: 9px;
+	content: "";
+	display: block;
+	width: 5px;
+	height: 25px;
+	background-color: #fecccd;
+}
+
+.close:after {
+	transform: rotate(45deg);
+}
+
+.close:before {
+	transform: rotate(-45deg);
 }

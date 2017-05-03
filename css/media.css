@@ -138,7 +138,7 @@
 	}
 
 	.partners img {
-		width: 75%;
+		width: 60%;
 	}
 
 }
@@ -149,6 +149,19 @@
 		width: 100%;
 	}
 
+	.contacts {
+		padding: 20px;
+		width: 260px;
+	}
+	.cards {
+		width: 100%;
+	}
+	.card_img {
+		margin: 0 auto;
+	}
+	.card_img img {
+		width: 100%;
+	}
 }
 
 /* Custom, iPhone Retina */
@@ -158,9 +171,13 @@
 		width: 100%;
 	}
 
-	.card_img {
-		display: none;
+	.contacts {
+		padding: auto;
 	}
+
+}
+
+
 
 
 /*==========  Mobile First Method  ==========*/
@@ -177,8 +194,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.main_nav ul {
-		display: block !important;
+	.main_nav ul{
+		display: block ! important;
 	}
 }
 
