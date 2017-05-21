@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Заголовок</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-2">
+					<a href="#" class="logo"><img src="img/logo.png" alt="logo" width="160" height="65"></a>
+				</div>
+				<div class="col-xs-6 col-sm-10 col-md-8 ">
+					<nav class="main_nav">
+						<button class="button hidden-lg hidden-md hidden-sm"><i class="fa fa-bars" aria-hidden="true"></i></button>
+						<ul>
+							<li><a href="#">Студия</a></li>
+							<li><a href="#">Клиенты</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xs-6 col-sm-2">
+					<a href="#" class="basket">Корзина</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="catalog_title">
+						<h1>Магазин готовых шаблонов</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+		<main class="catalog-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<aside class="catalog_price">
+							<form action="#" method="post">
+								<div class="price"><span>Стоймость:</span></div>
+
+								<div class="filter">
+									<div class="filter_range">
+										<div class="scale">
+											<div class="bar"></div>
+										</div>
+										<div class="ftoggle ftoggle-min"></div>
+										<div class="ftoggle ftoggle-max"></div>
+									</div>
+									<label>От
+										<input type="text" name="min_price" value="0">
+									</label>
+									<label>До
+										<input type="text" name="max_price" value="15000">
+									</label>
+								</div>
+
+								<fieldset class="radio_field">
+									<span>Сетка:</span>
+
+									<label>
+										<input type="radio" name="adapt" checked>
+										<span>Адаптивная</span>
+									</label><br>
+
+									<label>
+										<input type="radio" name="adapt">
+										<span>Фиксированная</span>
+									</label><br>
+
+									<label>
+										<input type="radio" name="adapt">
+										<span>Резиновая</span>
+									</label><br>
+								</fieldset>
+
+								<fieldset class="check_field">
+									<span>Особенности:</span>
+
+									<label>
+										<input type="checkbox" checked>
+										<span>Слайдер</span>
+									</label><br>
+
+									<label>
+										<input type="checkbox">
+										<span>Блок преимуществ</span>
+									</label><br>
+
+									<label>
+										<input type="checkbox" checked>
+										<span>Новости</span>
+									</label><br>
+
+									<label>
+										<input type="checkbox">
+										<span>Галерея</span>
+									</label><br>
+
+									<label>
+										<input type="checkbox">
+										<span>Корзина</span>
+									</label><br>
+								</fieldset>
+
+							</form>
+						</aside>
+					</div>
+
+					<div class="col-md-offset-1 col-md-8">
+						<section class="catalog_item">
+							<div class="catalog_sorting">
+								<span>Сортировать:</span>
+								<ul class="sorting">
+									<li><a href="#" class="sorting_active">по цене</a></li>
+									<li><a href="#">по типу</a></li>
+									<li><a href="#">по названию</a></li>
+									<li><a href="#" class="down sorting_active">вниз</a></li>
+									<li><a href="#" class="up">вверх</a></li>
+								</ul>
+							</div>
+
+							<div class="items">
+								<div class="item">
+									<div class="circles">
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+									<img src="img/img-sedona.jpg">
+
+									<div class="item_hover">
+										<div class="hover_title">sedona</div>
+										<div class="hover_desc">Информационный сайт <br> для туристов</div>
+										<button type="button" class="hover_btn">9900 руб.</button>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="circles">
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+									<img src="img/img-pink.jpg">
+
+									<div class="item_hover">
+										<div class="hover_title">заголовок</div>
+										<div class="hover_desc">Тут могла бы быть<br>ваша реклама!</div>
+										<button type="button" class="hover_btn">9900 руб.</button>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="circles">
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+									<img src="img/img-barbershop.jpg">
+
+									<div class="item_hover">
+										<div class="hover_title">заголовок</div>
+										<div class="hover_desc">Тут могла бы быть<br>ваша реклама!</div>
+										<button type="button" class="hover_btn">9900 руб.</button>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="circles">
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+									<img src="img/img-mishka.jpg">
+
+									<div class="item_hover">
+										<div class="hover_title">заголовок</div>
+										<div class="hover_desc">Тут могла бы быть<br>ваша реклама!</div>
+										<button type="button" class="hover_btn">9900 руб.</button>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="circles">
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+									<img src="img/img-aplus.jpg">
+									<div class="item_hover">
+										<div class="hover_title">заголовок</div>
+										<div class="hover_desc">Тут могла бы быть<br>ваша реклама!</div>
+										<button type="button" class="hover_btn">9900 руб.</button>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="circles">
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+									<img src="img/img-kvast.jpg">
+									<div class="item_hover">
+										<div class="hover_title">заголовок</div>
+										<div class="hover_desc">Тут могла бы быть<br>ваша реклама!</div>
+										<button type="button" class="hover_btn">9900 руб.</button>
+									</div>
+								</div>
+							</div>	
+
+							<div class="paginator">
+								<ul class="pages">
+									<li class="none"><a href="#" class="pref">предыдущая</a></li>
+									<li><a class="pages_active" href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a class="next" href="#">следующая</a></li>
+								</ul>
+							</div>		
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="rel">
+				<div class="map_container">
+				<div id="map"></div>
+				</div>
+
+				<div class="container">
+
+					<div class="write_us">
+
+								<button class="close"></button>
+
+								<div class="write_us_title">
+									Напишите нам
+								</div>
+
+								<form action="#" method="post">
+									<div class="form_sec_left">
+										<label for="viewer_name">
+											Ваше имя: 
+										</label>	<br>
+											<input type="text" name="viewer_name" placeholder="Представьтесь, пожалуйста" id="viewer_name">
+									</div>
+
+									<div class="form_sec_right">
+										<label for="viewer_mail">
+											Ваше e-mail: 
+										</label>  <br>
+											<input type="text" name="viewer_mail" placeholder=" Для отправки ответа" id="viewer_mail">
+									</div>
+
+									<div class="form_sec_area">
+										<label for="viewer_text">
+											Текст письма:
+										</label>  <br>
+										<textarea placeholder="В свободной форме" name="viewer_text" id="viewer_text"></textarea>
+									</div>
+									
+									<button class="form_btn" type="submit">Отправить</button>
+								</form>
+						</div>
+
+					<div class="overlay">	
+			
+						<div class="contacts">
+							<h2>NЁRDS DESIGN STUDIO</h2>
+							<p>191186, Санкт-Петербург,<br> 
+								ул. Б. Конюшенная, д. 19/8
+							</p>
+							<p>тел. +7 (812) 275-75-75</p>
+							<button class="btn">напишите нам</button>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-8 col-md-push-4">
+					<div class="social_description">
+						<h3>Давайте дружить, это выгодно!</h3>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-4 col-md-pull-8">
+					<div class="social">
+						<a href="#" class="vk"></a>
+						<a href="#" class="fb"></a>
+						<a href="#" class="inst"></a>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	</footer>
+			
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="js/common.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWemMU9ehqYUdAYZeEMQdWXa-EWNFu-dg&callback=initMap">
+    </script>
+	
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

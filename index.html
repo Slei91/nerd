@@ -237,58 +237,60 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="rel">
+			<div class="map_container">
+			<div id="map" class="indent"></div>
+			</div>
 
-		<div class="map">
 			<div class="container">
-				<div class="row rel">
 
 				<div class="write_us">
 
-					<button class="close"></button>
+							<button class="close"></button>
 
-					<div class="write_us_title">
-						Напишите нам
+							<div class="write_us_title">
+								Напишите нам
+							</div>
+
+							<form action="#" method="post">
+								<div class="form_sec_left">
+									<label for="viewer_name">
+										Ваше имя: 
+									</label>	<br>
+										<input type="text" name="viewer_name" placeholder="Представьтесь, пожалуйста" id="viewer_name">
+								</div>
+
+								<div class="form_sec_right">
+									<label for="viewer_mail">
+										Ваше e-mail: 
+									</label>  <br>
+										<input type="text" name="viewer_mail" placeholder=" Для отправки ответа" id="viewer_mail">
+								</div>
+
+								<div class="form_sec_area">
+									<label for="viewer_text">
+										Текст письма:
+									</label>  <br>
+									<textarea placeholder="В свободной форме" name="viewer_text" id="viewer_text"></textarea>
+								</div>
+								
+								<button class="form_btn" type="submit">Отправить</button>
+							</form>
 					</div>
 
-					<form action="#" method="post">
-						<div class="form_sec_left">
-							<label for="viewer_name">
-								Ваше имя: 
-							</label>	<br>
-								<input type="text" name="viewer_name" placeholder="Представьтесь, пожалуйста" id="viewer_name">
-						</div>
-
-						<div class="form_sec_right">
-							<label for="viewer_mail">
-								Ваше e-mail: 
-							</label>  <br>
-								<input type="text" name="viewer_mail" placeholder=" Для отправки ответа" id="viewer_mail">
-						</div>
-
-						<div class="form_sec_area">
-							<label for="viewer_text">
-								Текст письма:
-							</label>  <br>
-							<textarea placeholder="В свободной форме" name="viewer_text" id="viewer_text"></textarea>
-						</div>
-						
-						<button class="form_btn" type="submit">Отправить</button>
-					</form>
-				</div>
-
-					<div class="col-md-12">
-						<div class="contacts">
-							<h2>NЁRDS DESIGN STUDIO</h2>
-							<p>191186, Санкт-Петербург,<br> 
+				<div class="overlay">	
+		
+					<div class="contacts">
+						<h2>NЁRDS DESIGN STUDIO</h2>
+						<p>191186, Санкт-Петербург,<br> 
 							ул. Б. Конюшенная, д. 19/8
-							</p>
-							<p>тел. +7 (812) 275-75-75</p>
-							<button class="btn">напишите нам</button>
-						</div>
-					</div>
-				</div>
-
-			</div>	
+						</p>
+						<p>тел. +7 (812) 275-75-75</p>
+						<button class="btn">напишите нам</button>
+					</div>	
+				</div>	
+			</div>
 		</div>
 	</main>
 
@@ -316,6 +318,9 @@
 
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
 	<script src="js/common.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWemMU9ehqYUdAYZeEMQdWXa-EWNFu-dg&callback=initMap">
+    </script>
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
