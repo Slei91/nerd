@@ -21,6 +21,16 @@
 		bottom: 10px;
 	}
 
+	.paginator {
+		text-align: center;
+	}
+
+	.item {
+		width: 47%;
+		height: auto;
+		margin-right: 6%;
+	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -82,6 +92,10 @@
 	.close {
 		right: 55px;
 		top: 65px;
+	}
+
+	.catalog_price {
+		display: none;
 	}
 
 }
@@ -166,7 +180,6 @@
 	}
 
 	.map_container {
-		margin-top: 74px;
 		width: 100%;
 		height: 416px; 
 
@@ -196,6 +209,10 @@
 	.write_us .close {
 		right: 30px;
 		top: 40px;
+	}
+
+	.items {
+		text-align: center;
 	}
 
 }
@@ -244,11 +261,27 @@
 		margin-bottom: 15px;
 	}
 
+	.catalog_title h1 {
+		font-size: 42px;
+	}
+
+	.item {
+		width: 360px;
+		margin-right: 0;
+	}
+
+	.sorting li {
+		margin-left: 15px;
+	}
+
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 	
+	.item {
+		width: 280px;
+	}
 
 }
 
